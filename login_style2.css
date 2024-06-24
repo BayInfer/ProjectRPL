@@ -1,0 +1,118 @@
+/* CSS untuk mengatur tata letak dan gaya */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-size: cover; /* Gambar menutupi seluruh elemen tanpa mengubah rasio aspek */
+    background-repeat: no-repeat; /* Gambar tidak diulang */
+    background-position: center center; /* Gambar ditempatkan di tengah */
+    font-family: 'Quicksand', sans-serif;
+    animation: backgroundAnimation 15s infinite; /* Animasi dengan durasi 15 detik yang berjalan terus-menerus */
+}
+
+/* Definisi keyframes untuk animasi */
+@keyframes backgroundAnimation {
+    0% {
+        background-image: url('../Gambar/Log In & Sign Up/BG AC 1.png');
+    }
+    33% {
+        background-image: url('../Gambar/Log In & Sign Up/BG NFS.png');
+    }
+    66% {
+        background-image: url('../Gambar/Log In & Sign Up/BG AC 2.png');
+    }
+    100% {
+        background-image: url('../Gambar/Log In & Sign Up/BG AC 1.png');
+    }
+}
+
+
+.title-sign {
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: row;
+    width: 800px; /* Sesuaikan lebar formulir dan gambar */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 560px;
+
+}
+
+.registration-content {
+    flex: 1;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 120px;
+}
+
+.registration-image {
+    width: 400px;
+    height: 540px;
+    border-radius: 10px;
+}
+
+.registration-form h1 {
+    text-align: left;
+}
+
+.login {
+    text-align: center;
+}
+
+form {
+    font-weight: 500;
+    text-align: left;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px ;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    height: 38px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 8px ;
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Warna border hitam dengan tingkat transparansi 50% */
+    margin-bottom: 12px;
+}
+
+.login-ehe {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 400px; /* Membuat gambar mengisi lebar kontainernya */
+    padding: 0px;
+    height: 560px; /* Mengatur ketinggian agar gambar tidak terdistorsi */
+    border-top-right-radius: 10px; /* Radius sudut kanan atas */
+    border-bottom-right-radius: 10px; /* Radius sudut kanan bawah */
+}
+
+
+

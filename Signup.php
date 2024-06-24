@@ -3,72 +3,98 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Log In Page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="login_style2.css"> <!-- Sisipkan file CSS eksternal jika ada -->
+    <title>Sign Up</title>
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="signup_style.css">
 </head>
 <body>
+    <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
     <!-- Kotak container -->
     <div class="container">
         <div class="registration-form">
             <div class="registration-content">
-                <h2 class="title-sign">Log In</h2>
-                <form class="validate" method="post" action="login_procces.php"> <!-- Ganti action dengan nama file untuk proses login -->
+                <br>
+                <h2 class="title-sign">Sign Up</h2>
+                <form class="validate" method="post" action="signup_procces.php">
                     <!-- Konten formulir di sini -->
-                    <!-- Email -->
+
+                    <!-- Username -->
                     <div>
-                        <label for="email">Email</label>
-                        <br>
-                        <input type="text" id="email" name="email" required> <!-- Tambahkan atribut name -->
+                        <label class="label" for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
                     </div>
 
                     
 
                     <!-- Password -->
                     <div>
-                        <label for="password">Password</label>
-                        <br>
-                        <input type="password" id="password" name="password" aria-describedby="passwordHelpBlock"  required> <!-- Tambahkan atribut name -->
+                        <label class="label" for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    
+
+                    <!-- Email -->
+                    <div>
+                        <label class="label" for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+
+                    
+
+                    <!-- Peran -->
+                    <div>
+                        <label class="label" for="peran">Peran</label>
+                        <select class="form-select" id="peran" name="peran" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option value="Admin">Admin</option>
+                            <option value="User">User</option>
+                        </select>
                     </div>
 
                     
 
                     <!-- Tombol Submit -->
                     <div class="login">
-                        <button type="submit" class="login-ehe">Log In</button>
-                        <!-- Tombol Sign Up -->
-                        <p>Don't have account? <a href="Signup.php">Register Here</a></p>
+                        <button type="submit" class="login-ehe">Create Account</button>
+                        <!-- Sudah Punya Akun -->
+                        <p>Already have an Account? <a href="index.php">Log In</a></p>
                     </div>
                 </form>
             </div>
+
             <!-- Gambar di samping formulir -->
             <div class="bootstrap-wrapper">
                 <div id="carouselExampleControls" class="carousel slide registration-image custom-carousel" data-ride="carousel" data-interval="3000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/F7.png" alt="First slide">
+                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/DMC 5.png" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/WANTED.png" alt="Second slide">
+                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/DOTA.png" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/STAR WARS.png" alt="Third slide">
+                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/EVANGELION.png" alt="Third slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/NFSMW.png" alt="Fourth slide">
+                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/FF16.png" alt="Third slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/DMC.png" alt="Fifth slide">
+                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/MANDO.png" alt="Third slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/AC 3.png" alt="Sixth slide">
+                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/NFS.png" alt="Third slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/CRISIS.png" alt="Seventh slide">
+                            <img class="d-block w-100" src="../Gambar/Log In & Sign Up/RDR 2.png" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
