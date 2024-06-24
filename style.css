@@ -1,0 +1,112 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #1D222E; /* Ubah warna latar belakang halaman */
+  color: #ffffff; /* Ubah warna teks halaman */
+}
+
+.brand-logo {
+  width: auto; /* Pastikan ini "width" bukan "weight" */
+  height: 25px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+
+.navbar-custom {
+  background-color: #000000; /* Warna latar belakang navbar */
+  color: #ffffff; /* Warna teks navbar */
+  height: 75px;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #ffffff; /* Warna teks link di navbar */
+}
+
+.navbar-custom .navbar-brand {
+  color: #ffffff; /* Warna teks brand di navbar */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #D7145B; /* Warna teks link saat hover */
+}
+
+.navbar-custom .navbar-nav .logout-link {
+  color: #D7145B; /* Warna teks link "Log Out" */
+}
+
+.navbar-custom .navbar-nav .logout-link:hover {
+  color: #112847; /* Warna teks link "Log Out" saat hover menjadi kuning */
+}
+
+.title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #ffffff; /* Pastikan judul juga berwarna putih */
+}
+
+.breadcrumb {
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 0; /* Hilangkan margin bawah pada breadcrumb */
+  padding-bottom: 10px; /* Hilangkan padding bawah pada breadcrumb */
+  font-weight: 500;
+  color: #ffffff; /* Warna teks breadcrumb */
+}
+
+.home-item {
+  font-weight: 10px;
+  color: #ffffff; /* Warna teks home-item */
+}
+
+.row.no-gap {
+  margin-top: 0; /* Hilangkan margin atas pada row */
+  padding-top: 0; /* Hilangkan padding atas pada row */
+}
+
+.description {
+  padding-left: 25px;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 0; /* Hilangkan padding atas pada description */
+  padding-bottom: 270px;
+  color: #ffffff; /* Warna teks description */
+}
+
+.description-about {
+  padding-left: 25px;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 0; /* Hilangkan padding atas pada description */
+  padding-bottom: 270px;
+  font-size: 20px;
+  color: #ffffff; /* Warna teks description-about */
+}
+
+.input-group .btn {
+  margin-left: 10px;
+  background-color: #D7145B; /* Ubah warna tombol pencarian */
+  border-color: #D7145B; /* Ubah warna border tombol pencarian */
+  color: #ffffff; /* Ubah warna teks tombol pencarian */
+}
+
+.form-control {
+  background-color: #191B20; /* Ubah warna latar belakang form pencarian */
+  color: #ffffff; /* Ubah warna teks form pencarian */
+  border: 1px solid #ffffff; /* Ubah warna border form pencarian */
+}
+
+.card {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #191B20; /* Ubah warna latar belakang card */
+  color: #ffffff; /* Ubah warna teks card */
+  border: 3px solid rgba(255, 255, 255, 0.8); /* Ubah warna border card dengan opacity 80% */
+}
+
+.card-body {
+  background-color: #1D222E; /* Ubah warna latar belakang card */
+  color: #ffffff; /* Warna teks card-body */
+  border-top: 2px solid rgba(255, 255, 255, 0.8); /* Ubah warna border atas card dengan opacity 80% */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8); /* Ubah warna border bawah card dengan opacity 80% */
+}
+
+
+.py-5 {
+  background-color: #D7145B; /* Ubah warna latar belakang elemen py-5 */
+  color: #ffffff; /* Ubah warna teks elemen py-5 */
+}
